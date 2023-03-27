@@ -26,10 +26,10 @@ let expressionsCollection = [];
 
 /** Loads the models and gives data to startvideo */
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri("../models"),
-  faceapi.nets.faceLandmark68Net.loadFromUri("../models"),
-  faceapi.nets.faceRecognitionNet.loadFromUri("./models"),
-  faceapi.nets.faceExpressionNet.loadFromUri("../models"),
+  faceapi.nets.tinyFaceDetector.loadFromUri("../week5-inleveropdracht/models"),
+  faceapi.nets.faceLandmark68Net.loadFromUri("../week5-inleveropdracht/models"),
+  faceapi.nets.faceRecognitionNet.loadFromUri(
+    "../week5-inleveropdracht/models"),
 ]).then(startVideo);
 
 /**
